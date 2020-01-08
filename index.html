@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Piskel-clone</title>
+</head>
+<body>
+<div class="header_wrapper">
+  <div class="nav">
+    <a class="logo" href="https://www.piskelapp.com/">
+      <div class="logo--img" ></div>
+    </a>
+    <h1 class="nav_name">Piskel-clone*</h1>
+    <div class="nav_buttons">
+      <a class="nav_buttons--button" href="#">
+          Create Sprite
+        </span>
+      </a>
+      <a class="nav_buttons--button" href="#">
+        Sign in
+      </a>
+    </div>
+  </div>
+</div>
+  <div class="main_wrapper">
+    <div class="tools_container">
+      <div class="tools_vertical_center">
+        <div id="pen_sizes" class="pen_size">
+          <div id="pen_size1" class="pen_size--item pen_size--size1 selected"></div>
+          <div id="pen_size2" class="pen_size--item pen_size--size2"></div>
+          <div id="pen_size3" class="pen_size--item pen_size--size3"></div>
+          <div id="pen_size4" class="pen_size--item pen_size--size4"></div>
+        </div>
+      <ul id='tools' class="tools">
+        <li id='pencil' class="tools--item tools--pen selected">
+          <span class="tip_text">Pen</span>
+        </li>
+        <li id='stroke' class="tools--item tools--stroke">
+          <span class="tip_text">Stroke</span>
+        </li>
+        <li id='bucket' class="tools--item tools--bucket">
+          <span class="tip_text">Bucket</span>
+        </li>
+        <li id='bucketAllPixels' class="tools--item tools--bucketAllPixels">
+          <span class="tip_text">Bucket&nbspall&nbsppixels</span>
+        </li>
+        <li id='picker' class="tools--item tools--picker">
+          <span class="tip_text">Picker</span>
+        </li>
+        <li id='eraser' class="tools--item tools--eraser">
+          <span class="tip_text">Erasert</span>
+        </li>
+      </ul>
+      <div id="palette" class="palette">
+        <label id="first_color" class="palette--first_color palette--item">
+          <input type="color" id="first_color_input" class="palette--input">
+          <span class="tip_text">First color</span>
+        </label>
+        <div class="palette--item palette--background_first">
+        </div>
+        <label id="second_color" class="palette--second_color palette--item">
+          <input type="color" id="second_color_input" class="palette--input">
+          <span class="tip_text">Second color</span>
+        </label>
+        <div class="palette--item palette--background_second">
+        </div>
+      </div>
+      <div id='canvas_size' class="canvas_size">
+        <div class="canvas_size--item canvas_size--32 selected">32x32</div>
+        <div class="canvas_size--item canvas_size--64">64x64</div>
+        <div class="canvas_size--item canvas_size--128">128x128</div>
+      </div>
+    </div>
+
+    </div>
+    <div class="frame_list_container" oncontextmenu="return false">
+      <ul id="frames"class="frame">
+        <li class="frame--item selected" draggable="true">
+          <canvas class="frame--item_canvas"  width="96" height="96">
+          </canvas>
+          <div class="frame--btn_number">1</div>
+          <div class="frame--btn btn_delete"></div>
+          <div class="frame--btn btn_copy"></div>
+          <div class="frame--btn btn_move"></div>
+        </li>
+      </ul>
+      <div id="btn_add_frame" class="frame--btn_add_frame">
+        <div class="frame--btn_add_frame_img">
+        </div>
+        <p>
+          Add new frame
+        </p>
+      </div>
+    </div>
+    <div class="canvas_wrapper" oncontextmenu="return false">
+      <div class="canvas_background">
+        <canvas id="canvas" width="32" height="32"></canvas>
+        <canvas id="canvas2" width="32" height="32"></canvas>
+      </div>
+    </div>
+    <div class="animate">
+      <div class="animate--preview_background">
+        <canvas id="animate_canvas" class="animate--canvas"  width="96" height="96">
+        </canvas>
+        <span id="full_screen" class="full_screen_button">
+        </span>
+      </div>
+      <div class="animate--fps">
+        <span id="fps_text" class="animate--fps_text">2 FPS
+        </span>
+        <input type="range" id="fps_range" class="animate--fps_range" min="0" max="24" value="2">
+      </div>
+      <div class="export_panel">
+        <p class="export_panel--text">Download as...</p>
+        <div class="export_panel--button-container">
+          <button type="button" id="apngDownloadButton" class="download_button">
+            APNG
+          </button>
+          <button type="button" id="gifDownloadButton" class="download_button">
+            GIF
+          </button>
+        </div>
+
+      </div>
+      <a href="./landing.html">123456</a>
+    </div>
+  </div>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
